@@ -9,7 +9,7 @@ typedef struct input{
 	char letters[5];
 
 
-};
+}input;
 
 
 struct input test[1200000];
