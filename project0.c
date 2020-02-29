@@ -99,23 +99,18 @@ int handleMember(char* buf, int pos){
 			printf("Shouldnt reach here");
                 }
 	}
-
 	//if buf does not exist in struct array add to struct array
 	printf("new letter\n");
 	printf("Adding new letter to struct array at test[%d]\n\n", pos);
-	//add buf to struct at position p*	
+	//add buf to struct at position p*
 	//test[pos].letters = buf;
 	test[pos].count = 1;
-	test[pos].earliestPos = 0; 	
+	test[pos].earliestPos = 0;
 	strcpy(test[pos].letters, buf);
-	//Update earliest position 
+	//Update earliest position
 	//test[pos].earliestPos = pos;
 	pos++;
-	return pos;		
+	return pos;
 	printf("Shouldnt reach here");
-		
-		
-		
-	
 
 }
