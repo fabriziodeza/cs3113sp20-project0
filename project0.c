@@ -32,7 +32,7 @@ int main (int argc, char* argv[]){
                 if((buffer[0] & 0XF0) == 0XF0){
 
 			fread(buffer_pointer + 1, 1, 3, stdin);
-                        *(buffer_pointer + 3) = '\0';
+                        *(buffer_pointer + 4) = '\0';
                         printf("%s saved in char array, 4 byte\n",buffer);
                         position = handleMember(buffer, position);
 
