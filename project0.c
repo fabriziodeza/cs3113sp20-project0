@@ -22,8 +22,6 @@ int handleMember(char* buf, int pos){
                         //test[position].letters = buffer
                         //increment count
                         test[i].count++;
-                        //printf("Count of %s at test[%d]: %d\n\n", test[i].letters, i,
- test[i].count);
                         return pos;
                         //printf("Shouldnt reach here");
                 }
@@ -98,8 +96,7 @@ int main (int argc, char* argv[]){
                         if(buffer[0] <=  0X80){
                                 if(buffer[0] != 10){
                                         *(buffer_pointer + 1) = '\0';
-                                        //printf("%s saved in char array, 1 byte\n",buf
-fer);
+                                        //printf("%s saved in char array, 1 byte\n",buffer);
                                         position = handleMember(buffer, position);
                                 }
                                 //Adds new char to struct array or
