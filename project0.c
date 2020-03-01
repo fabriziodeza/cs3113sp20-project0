@@ -9,7 +9,7 @@ typedef struct input{
 struct input test[1200000];
 void printList(int pos){
         for(int i = 0; i < pos; i++){
-                printf("%s -> %d\n",test[i].letters, test[i].count);
+                printf("%s->%d\n",test[i].letters, test[i].count);
         }
 }
 int handleMember(char* buf, int pos){
