@@ -94,13 +94,9 @@ int main (int argc, char* argv[]){
                 //last case would be if char being input has 1 bytes
                 else{
                         if(buffer[0] <=  0X80){
-                                if(buffer[0] != 10){
-                                        *(buffer_pointer + 1) = '\0';
-                                        //printf("%s saved in char array, 1 byte\n",buffer);
-                                        position = handleMember(buffer, position);
-                                }
-                                //Adds new char to struct array or
-                                //increments the count                        }
+                             	*(buffer_pointer + 1) = '\0';
+				//printf("%s saved in char array, 1 byte\n",buffer);
+				position = handleMember(buffer, position);  
                         }
                 }
                 buffer[0] = '\0';
